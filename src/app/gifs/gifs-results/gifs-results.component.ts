@@ -1,3 +1,4 @@
+import { GifsService } from './../../services/gifs.service';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -7,9 +8,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class GifsResultsComponent implements OnInit {
 
-  constructor() { }
+  constructor(private gifsService:GifsService) { }
 
   ngOnInit(): void {
+  }
+
+  get searchResults() {
+    return this.gifsService.searchResults;
   }
 
 }

@@ -16,7 +16,9 @@ import { GifsResultsComponent } from './gifs-results/gifs-results.component';
     CommonModule
   ],
   exports: [
-    GifsPageComponent
+    GifsPageComponent,
+    GifsSearchComponent,
+    GifsResultsComponent
   ]
 })
 export class GifsModule { }
